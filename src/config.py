@@ -1,0 +1,50 @@
+"""Shared timeline. 150 BPM, downbeats locked to t = 4.0 + n * 1.6."""
+
+FPS = 30
+WIDTH = 1920
+HEIGHT = 1080
+DURATION = 60.0
+FRAMES = int(DURATION * FPS)
+SR = 48000
+
+# Scene is rendered slightly under 1080p; HUD and type stay full-res.
+SCENE_W = 1600
+SCENE_H = 900
+
+BPM = 150.0
+BEAT = 60.0 / BPM
+BAR = BEAT * 4.0
+
+# Visual / audio cues (seconds)
+T_GLITCH = 1.10
+T_HOLE = 2.20
+T_IMPACT = 4.00
+T_HONK = 5.20
+T_WELCOME = 7.20
+T_ARGON = 8.80
+T_JUGGLE = 10.40
+T_TRI = 11.50
+T_PHYSICS = 13.60
+T_VIBES = 15.20
+T_RISER = 16.80
+T_DROP = 18.40
+T_LAND = 23.20
+T_FLAG = 26.40
+T_CHAIRS = 28.00
+T_FINE = 29.60
+T_SHADES = 31.20
+T_BANANA = 32.00
+T_MOON2 = 32.80
+T_CLINK = 34.40
+T_GRAV = 37.60
+T_CRUNCH = 40.20
+T_SNACK = 40.80
+T_BACK = 44.00
+T_WIDE = 45.60
+T_CARD = 47.20
+T_STAMP = 56.80
+T_CLICK = 58.40
+
+GROUND = 0.0
+MOON_R = 8.35
+MOON_C = (0.0, GROUND - MOON_R, 0.0)
