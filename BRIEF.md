@@ -1,0 +1,10 @@
+# Brief: GROK FINALE (Argon -> DeepSeek -> Grok)
+input/ contains two code-generated videos: argon-act1.mp4 (Google Gemini 4 Argon's "ARGON // 18" showcase) and deepseek-spoof.mp4 (DeepSeek's parody, which melts Argon down and claims to do better). Sources: https://github.com/lewismarshall/argon-video-showcase and https://github.com/lewismarshall/deepseek-video-spoof (clone into ./ref if useful).
+Make the finale, everything generated in code, and go to the moon on comedy and quality:
+1. Start seamlessly from the last frame of deepseek-spoof.mp4 (extract it), then Grok crashes the party, completely unhinged: absurd escalation, rockets, robot arms, physics breaking, the previous two "AIs" getting upstaged, and visual gags that land. Make it funny, not mean.
+2. Push quality as far as you can: 3D (raymarching, Blender headless, moderngl/EGL, Taichi, numpy, whatever you can install inside this folder), particles, motion blur, bloom, camera moves. CPU-only box, so keep total render under about 35 min.
+3. Soundtrack generated 100% in code, bigger and sillier than both previous ones, with a massive drop and comedic sound effects synced to the gags.
+4. End card: an absurd, witty Grok sign-off, plus a credits roll naming Gemini 4 Argon, DeepSeek and Grok 4.7. Metric units only if any appear.
+Output: out/finale.mp4 (45-75 s, 1920x1080, 30 fps, AAC audio), out/trilogy.mp4 (argon-act1 + deepseek-spoof + finale, continuous), out/poster.png, and one make.sh that rebuilds everything. No downloaded stock media or logos, no secrets, nothing outside this folder.
+Verify with frame checks at each transition and ffprobe. Publish: this folder is a public GitHub repo served by GitHub Pages from /docs. Copy finale.mp4, trilogy.mp4 and poster.png into docs/ (if trilogy.mp4 is over 95 MB, re-encode it smaller), write docs/index.html with a player featuring the trilogy first, then commit and push to main (never force-push).
+Write DONE.md covering what you built, tools, timings, problems and a self-rating, then stop.

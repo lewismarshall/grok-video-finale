@@ -1,0 +1,4 @@
+input/
+ref/
+.venv/
+out/*.mp4
